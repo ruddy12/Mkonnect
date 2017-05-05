@@ -49,14 +49,15 @@ if (isset($_POST['login'])) {
 
 
   //select query
-  $select_log = "select * from users WHERE email='$email' AND password='$user_pass'";
+  $select_log = "SELECT * FROM users WHERE email= '$email' AND password= '$user_pass; ";
 
   $query = mysqli_query($con, $select_log);
+  //$row = mysqli_fetch_array($query);
 
-  if(mysqli_num_rows($query)){
+  if($query){
 
-    $select_log = "select * from users WHERE email='$email'";
-    $query = mysqli_query($con, $select_log);
+    // $select_log = "SELECT * FROM users WHERE email='$email' ";
+    //$query = mysqli_query($con, $select_log);
       $row = mysqli_fetch_array($query);
         $user_id = $row['user_id'];
         $_SESSION['email']=$email;
@@ -66,8 +67,8 @@ if (isset($_POST['login'])) {
   }
    else
     {
-
-        echo"<script> $('#myModal').modal('show');</script>";
+        echo "wrong username or password";
+        // echo"<script> $('#myModal').modal('show');</script>";
        // echo "<script>window.open('mkonnect.php','_self')</script>";
 	exit();
 

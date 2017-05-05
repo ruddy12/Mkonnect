@@ -8,6 +8,7 @@ h1 {
 #container {
   width:  980px;
   margin: 0 auto;
+  background-color:;
 }
 
 section {
@@ -33,4 +34,10 @@ section {
 
 #more {
   margin: 20px auto 48px;
+}
+
+.container {
+  width:  800px;
+  margin: 0 auto;
+  background-color:;
 }

@@ -1,11 +1,11 @@
 <?php
 
 //redirects them to login page
-$_SESSION['auth'] = false;
+if ($_SESSION['auth_emp'] = true) {
+	//end session
+	session_destroy();
+	$_SESSION['auth_emp'] = false;
+	header("Location: mkonnectn1.php");
 
-//end session
-session_destroy();
-
-
-header("Location: mkonnect.php");
+}
 ?>

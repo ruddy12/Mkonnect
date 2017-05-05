@@ -79,7 +79,7 @@
 <div class="container">
     <div class="panel">
         <div class="panel">
-            <h3 class="text-danger"><center>Update Your Profile the Click Next to Upload your C.V.</center></h3>
+            <h3 class="text-danger"><center>Update Your Profile then Click Next to Upload your C.V.</center></h3>
             <div class="well" style=" margin:0%; ">
                 <div class="caption">
 

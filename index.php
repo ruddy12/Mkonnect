@@ -48,8 +48,11 @@ session_destroy();
   overflow: hidden;
 }
 #job_types{
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyA7xwFNVFltXxYYlyuiFzYtbshZcECIZThteLMuNgQvgEVAt"); height: auto;
-  width: 100%; padding: 40px 0; overflow: hidden;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyA7xwFNVFltXxYYlyuiFzYtbshZcECIZThteLMuNgQvgEVAt"); 
+  height: auto;
+  width: 100%;
+   padding: 40px 0; 
+   overflow: hidden;
 }
 
 .jobbs {

@@ -84,7 +84,7 @@ body{
 <div class="container">
     <div class="panel">
         <div class="">
-            <form>
+            <form  role="form" class="form-horizontal" action="emp_update.php" method="POST" name="contactform"  style="padding: 2%;">
             <div class="row">
             <div class="col-md-12">
               <div class="form-group">

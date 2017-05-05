@@ -1,7 +1,7 @@
 <?php
 require ("db.php");
 
-if (isset($_POST['emp_login'])) {
+//if (isset($_POST['emp_login'])) {
 
   //declare variable
 
@@ -11,19 +11,20 @@ if (isset($_POST['emp_login'])) {
 
 
   //select query
-  $select_log = "select * from employer WHERE email='$email' AND password='$user_pass'";
+  $select_log2 = "SELECT email FROM employer  WHERE email='$email'";
+  $select_log = "SELECT email , password FROM employer WHERE email='$email' AND password='$user_pass'";
 
   $query = mysqli_query($con, $select_log);
 
-  if(mysqli_num_rows($query)){
+  if($query){
 
-    $select_log = "select * from employer WHERE email='$email'";
-    $query = mysqli_query($con, $select_log);
+    //$select_log2 = "select * from employer WHERE email='$email'";
+    //$query = mysqli_query($con, $select_log2);
       $row = mysqli_fetch_array($query);
         $user_id = $row['employer_id'];
         $_SESSION['email']=$email;
         $_SESSION['id']=$user_id;
-        $_SESSION['auth'] = true;
+        $_SESSION['auth_emp'] = true;
         echo "<script>window.open('postjob.php','_self')</script>";
   }
    else
@@ -37,5 +38,5 @@ if (isset($_POST['emp_login'])) {
 
 
 
-}
+
  ?>

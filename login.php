@@ -38,30 +38,31 @@
 
 <?php
 
-	// session_start();
+//session_start();
 
-if (isset($_POST['login'])) {
+// if (isset($_POST['login'])) {
 
   //declare variable
   $email=$_POST['email'];
   $user_pass = $_POST['password'];
   $user_pass = md5($user_pass);
+  $user_id = $_SESSION['user_id'];
 
 
   //select query
-  $select_log = "select * from users WHERE email='$email' AND password='$user_pass'";
+  $select_log = "SELECT * FROM users WHERE email='$email' AND password='$user_pass'";
 
   $query = mysqli_query($con, $select_log);
 
-  if(mysqli_num_rows($query)){
+  if($query){
 
-    $select_log = "select * from users WHERE email='$email'";
+    $select_log = "SELECT * FROM users WHERE email='$email'";
     $query = mysqli_query($con, $select_log);
       $row = mysqli_fetch_array($query);
         $user_id = $row['user_id'];
         $_SESSION['email']=$email;
         $_SESSION['id']=$user_id;
-          $_SESSION['auth'] = true;
+        $_SESSION['auth'] = true;
         echo "<script>window.open('profile.php','_self')</script>";
   }
    else
@@ -76,5 +77,5 @@ if (isset($_POST['login'])) {
 
 
 
-}
+
  ?>
