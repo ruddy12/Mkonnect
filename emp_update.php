@@ -18,7 +18,7 @@
       <div class="thumbnail">
       <img src="https://trello-attachments.s3.amazonaws.com/57cd66c81620c41c25537e9d/5873245b02367ea3926a590e/a21f54e3c2a9e3fd4cc4c9c3188f1b14/thanks.jpg">
       <div class="caption">
-      <center><p class="text-warning" style="font-size:15px;"> Job Has Been Posted Succesfully
+      <center><p class="text-warning" style="font-size:2em;"> Job Has Been Posted Succesfully
       </center>
 
 

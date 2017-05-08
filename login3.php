@@ -10,16 +10,8 @@ session_destroy();
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/stylelogin.css">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/site.css" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="css/stylemkonect.css">
-    <link rel="stylesheet" type="text/css" href="css/materialize.css"> 
-    <link rel="stylesheet" type="text/css" href="css/materialize-min.css"> 
-  <link rel="stylesheet" type="text/css" href="css/stylemkonect.css"> 
-  <link rel="stylesheet" type="text/css" href="js/carousel.js">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,235 +71,89 @@ session_destroy();
       visibility: hidden;
     }
 }
-body{
-  padding: 30px;
-  background-image: url(data:image/png;base64,...==);} 
-a{ 
-  color:#000;
-}
-ul{ 
-  list-style-type: none;
-  margin-top: -20px;
-}
-.box{ 
-  position: relative;
-  z-index: 1;
-  width: 456px;
-  height: 380px; 
-  margin:50px auto 0;
-  text-align: center;
-  color:#fff;
-  text-shadow:0 1px 0 #333; 
-  background:
-    -webkit-radial-gradient(0 100%, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    -webkit-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    -webkit-radial-gradient(100% 0, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    -webkit-radial-gradient(0 0, circle, rgba(204,0,0,0) 29px, #d05353 29px);
-  background:
-    -moz-radial-gradient(0 100%, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    -moz-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    -moz-radial-gradient(100% 0, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    -moz-radial-gradient(0 0, circle, rgba(204,0,0,0) 29px, #d05353 29px);
-  background:
-    -o-radial-gradient(0 100%, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    -o-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    -o-radial-gradient(100% 0, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    -o-radial-gradient(0 0, circle, rgba(204,0,0,0) 29px, #d05353 29px);  
-  background:
-    -ms-radial-gradient(0 100%, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    -ms-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    -ms-radial-gradient(100% 0, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    -ms-radial-gradient(0 0, circle, rgba(204,0,0,0) 29px, #d05353 29px); 
-  background:
-    radial-gradient(0 100%, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    radial-gradient(100% 100%, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    radial-gradient(100% 0, circle, rgba(204,0,0,0) 29px, #d05353 29px),
-    radial-gradient(0 0, circle, rgba(204,0,0,0) 29px, #d05353 29px); 
-  background-position: bottom left, bottom right, top right, top left;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
-}
-.tag{ 
-  position: relative; 
-  top: -5px; 
-  left: 50%; 
-  margin-left: -92px; 
-  width: 184px; 
-  height: 87px;
-  color:#fff; 
-  font-size: 36px; 
-  font-weight: bold; 
-  line-height: 87px; 
-  text-shadow:0 -1px 0 rgba(0,0,0,.2);
-  background-color: #b5ae63;
-  background-size: 2px 2px;
-  background-image: -webkit-linear-gradient(45deg, #c0b96a 25%, transparent 25%, transparent 75%, #c0b96a 75%, #c0b96a), 
-    -webkit-linear-gradient(-45deg, #c0b96a 25%, transparent 25%, transparent 75%, #c0b96a 75%, #c0b96a);
-  background-image: -moz-linear-gradient(45deg, #c0b96a 25%, transparent 25%, transparent 75%, #c0b96a 75%, #c0b96a), 
-    -moz-linear-gradient(-45deg, #c0b96a 25%, transparent 25%, transparent 75%, #c0b96a 75%, #c0b96a);
-  background-image: -o-linear-gradient(45deg, #c0b96a 25%, transparent 25%, transparent 75%, #c0b96a 75%, #c0b96a), 
-    -o-linear-gradient(-45deg, #c0b96a 25%, transparent 25%, transparent 75%, #c0b96a 75%, #c0b96a);
-  background-image: -ms-linear-gradient(45deg, #c0b96a 25%, transparent 25%, transparent 75%, #c0b96a 75%, #c0b96a), 
-    -ms-linear-gradient(-45deg, #c0b96a 25%, transparent 25%, transparent 75%, #c0b96a 75%, #c0b96a);
-  background-image: linear-gradient(45deg, #c0b96a 25%, transparent 25%, transparent 75%, #c0b96a 75%, #c0b96a), 
-   linear-gradient(-45deg, #c0b96a 25%, transparent 25%, transparent 75%, #c0b96a 75%, #c0b96a);    
-}
-.tag:after,
-.tag:before{
-  position:absolute;
-  left:0; 
-  content: ""; 
-  width: 100%; 
-  z-index: 8
-}
-.tag:after{
-  height: 30px; 
-  top: 0px; 
-  background: -webkit-linear-gradient(top,rgba(226,217,124,0) 0%,rgba(226,217,124,1) 40%,rgba(226,217,124,1) 60%,rgba(226,217,124,0) 100%);
-  background: -moz-linear-gradient(top,rgba(226,217,124,0) 0%,rgba(226,217,124,1) 40%,rgba(226,217,124,1) 60%,rgba(226,217,124,0) 100%);
-  background: -o-linear-gradient(top,rgba(226,217,124,0) 0%,rgba(226,217,124,1) 40%,rgba(226,217,124,1) 60%,rgba(226,217,124,0) 100%);
-  background: -ms-linear-gradient(top,rgba(226,217,124,0) 0%,rgba(226,217,124,1) 40%,rgba(226,217,124,1) 60%,rgba(226,217,124,0) 100%);
-  background: linear-gradient(top,rgba(226,217,124,0) 0%,rgba(226,217,124,1) 40%,rgba(226,217,124,1) 60%,rgba(226,217,124,0) 100%);
-}
-.tag:before{ 
-  height:8px; 
-  bottom: -5px; 
-  z-index: -1;  
-  background: -webkit-radial-gradient(ellipse closest-side, #b8b165, #b8b165 0%, #b8b165 70%,#732e2e 99%, transparent);
-  background: -moz-radial-gradient(ellipse closest-side, #b8b165, #b8b165 0%, #b8b165 70%,#732e2e 99%, transparent);
-  background: -o-radial-gradient(ellipse closest-side, #b8b165, #b8b165 0%, #b8b165 70%,#732e2e 99%, transparent);
-  background: -ms-radial-gradient(ellipse closest-side, #b8b165, #b8b165 0%, #b8b165 70%,#732e2e 99%, transparent);
-  background: radial-gradient(ellipse closest-side, #b8b165, #b8b165 0%, #b8b165 70%,#732e2e 99%, transparent);
-  background-size:8px 8px;
-}
-form div:nth-of-type(3):before,
-form div:nth-of-type(5):before{ 
-  content: ""; 
-  display: block;    
-  width: 100%; 
-  height: 5px;
-  border:1px solid #c9938a;
-  border-color:#c9938a transparent;
-}
-form{ 
-  margin: 0 20px;
-  line-height: 30px;
-}
-form input:not([type="checkbox"]){ 
-  background: #aa3e3e; 
-  box-shadow:inset 0 0 5px rgba(0,0,0,.5),0 1px 1px #da6262; 
-  border: none; 
-  height: 30px; 
-  width: 100%; 
-  padding-left: 5px; 
-  padding-right: -5px; 
-  margin:20px 0;
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
-  transition: border linear 0.2s, box-shadow linear 0.2s;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-form input:not([type="checkbox"]):focus{
-  outline: 0 none;
-  box-shadow: inset 0 1px 3px rgba(255,255,255,0.1), 0 0 8px rgba(255,255,255, 0.6);
-}
-::-webkit-input-placeholder {
-  color:#d6aaaa;
-  font-weight: bold;
-}
-form .btn{ 
-  position: relative;
-  top: 0; 
-  border: none; 
-  width: 112px; 
-  height: 44px; 
-  font-weight: bold;
-  color: #b74242;
-  text-shadow:0 -1px 0 #000; 
-  border-radius: 3px; 
-  box-shadow: 0 -1px 0 #feeae7,0 1px 0 #976159; 
-  background: -webkit-linear-gradient(top,#f8d3cf,#dfafa8); 
-  background: -moz-linear-gradient(top,#f8d3cf,#dfafa8); 
-  background: -o-linear-gradient(top,#f8d3cf,#dfafa8); 
-  background: -ms-linear-gradient(top,#f8d3cf,#dfafa8); 
-  background: linear-gradient(top,#f8d3cf,#dfafa8); 
-  margin-top: 20px;
-  -webkit-transition: all 0.25s ease-out 0.05s;
-  -moz-transition: all 0.25s ease-out 0.05s;
-  -o-transition: all 0.25s ease-out 0.05s;
-  -ms-transition: all 0.25s ease-out 0.05s;
-  transition: all 0.25s ease-out 0.05s;
-}
-form .btn:hover{
-  top: 1px;
-  box-shadow: 0 -1px 0 #feeae7,0 2px 0 #976159; 
-  background: -webkit-linear-gradient(top,#dfafa9,#e1b2ac);   
-  background: -moz-linear-gradient(top,#dfafa9,#e1b2ac);  
-  background: -o-linear-gradient(top,#dfafa9,#e1b2ac);  
-  background: -ms-linear-gradient(top,#dfafa9,#e1b2ac);   
-  background: linear-gradient(top,#dfafa9,#e1b2ac);   
-}
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
 </style>
 
 
 
   </head>
   <body data-spy="scroll" data-target="#uxt" data-offset="70" class="">
-    <nav>
-    <div class="nav-wrapper">
-    <a href="#!" class="brand-logo"><img src="img/icons/imageedit_4_7060829937.png" style="width: 200px;"></a>
-    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
-      <li><strong><a href="construction.php">Short Code &nbsp &nbsp &nbsp &nbsp</a></strong></li>
-      <li><strong><a href="aboutus.php">About Us &nbsp &nbsp &nbsp &nbsp </a></strong></li>
-      <li><strong><a href="mkonnectn1.php">Home &nbsp &nbsp &nbsp &nbsp</a></strong></li>
-      <li><strong><a href="postjob.php">Post A Job &nbsp &nbsp &nbsp &nbsp</a></strong></li>
-      
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><strong><a href="construction.php">Short Code &nbsp &nbsp &nbsp &nbsp</a></strong></li>
-        <li><strong><a href="aboutus.php">About Us &nbsp &nbsp &nbsp &nbsp </a></strong></li>
-        <li><strong><a href="mkonnectn1.php">Home &nbsp &nbsp &nbsp &nbsp</a></strong></li>
-        <li><strong><a href="postjob.php">Post A Job &nbsp &nbsp &nbsp &nbsp</a></strong></li>  
-      </ul>
-    </div>
+  <a class="navbar-brand" rel="home" href="#" title="logo">
+  <img src="img/logo.jpg"></a>
+ 
+<!-- Fixed navbar -->
+<div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav" >
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav nav-justified">
+          <li class="active"><a href="mkonnect.php">Home</a></li>
+          
+          <li class="active"><a href="mkonnect.php#about">About</a></li>
 
-  </nav>
+          <li class="active"><a href="mkonnect.php#contacts">Contact</a></li>
 
-   <div class="box" style="">
-  <form action="login.php" method="post" name="login">
-    <div class="tag">SIGN IN</div>
-    <div>Log in to your account or sign up to create one.</div>
-    <div>
-      <input name="email" id = "email"  placeholder="Your Email" type="email" required="">
-    </div>
-    <div>
-      <input name="password" id = "Password"  placeholder="Your Password" type="password" required="">
-    </div>
-    <div>
-      <button type="submit" class="btn" value="submit">SUBMIT</button>
-    </div>
-    <div>
-      <a href="emp_signup.php">Are You An Employer.? Sign Up Here.</a>
-    </div>
-    <div>
-    <center><a data-toggle="collapse" href="#reg" aria-expanded="false" aria-controls="collapseExample"> <button class="btn btn-warning" style="margin-left: -5px; width: 400px;">Register if you dont have an account</button></a></center><br><br>
-    </div>
-  </form>
-</div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      </ul></div><!--/.nav-collapse -->
+    </div><!--/.container -->
+</div><!--/.navbar -->
 
 
+
+<section id="job_types" style="margin-top:-5%;" >
+  <div class="thumbnail">
+      <legend><h1 style="text-align: center;"> <span class="glyphicon glyphicon-user"></span></h1></legend>
+         <form class="form-vertical" action="login33.php" method="POST" id="">
+                 <div class="form-group">
+            <div class="col-md-12">
+               <label for="txt_email" class="control-label">
+               <h3 class="text-muted">Email</h3></label>
+            </div><!--col-md-12-->
+          </div><!--form-group-->
+
+                  <div class="form-group">
+                 <div class="col-md-10">
+
+                   <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" id="email1" required="">
+
+
+                    </div><!--col-md-12-->
+                    </div><!--form-group-->
+
+                        <div class="form-group">
+            <div class="col-md-12">
+               <label for="txt_pass" class="control-label"><h3 class="text-muted">Password</h3></label>
+            </div><!--col-md-12-->
+          </div><!--form-group-->
+
+              <div class="form-group">
+              <div class="col-md-10">
+
+            <input class="form-control" name="password" placeholder="Your Password" type="password" id="password1"  required="">
+
+              </div><!--col-md-12-->
+               </div><!--form-group-->
+
+                <div class="form-group">
+              <div class="col-md-10">
+
+                <div class="popover-footer" id="login4">
+                   <center> <input type="submit" name="login" value="Login" class="btn btn-lg btn-primary btn-lg"></input></center><br>
+                </div>
+                </div>
+                </div>
+
+                </form>
+  
+
+  
+  <center><a data-toggle="collapse" href="#reg" aria-expanded="false" aria-controls="collapseExample"> <button class="btn btn-warning" style="margin-right: 15%;">Register if you dont have an account</button></a></center><br><br>
+  
+  </div><!--thumbnail-->
   <div class="thumnail"></div>
 <div id="reg" class="collapse" >
 <div class="row " style="margin-top: 0%;">
@@ -363,11 +209,10 @@ form .btn:hover{
 
 
                 </div>
-                
                 <div class="form-group">
                 <div class="col-md-8">
 
-         <input class="btn btn-lg btn-success btn-block " type="submit" value="Register" name="accounts"   style="font-size:1.25em;margin-left: 150px;margin-top: -20px;">
+         <input class="btn btn-lg btn-success btn-block " type="submit" value="Register" name="accounts"   style="font-size:1.25em;" margin-top:-8%;>
 
                 </div><!--col-md-12-->
             </div><!--form-group-->
@@ -381,42 +226,12 @@ form .btn:hover{
 </div><!--reg-->
 
 
-<footer class="page-footer" style="background-color: rgb(8,8,8);margin-top: 50px;">
-<div class="row">
-<div class="col m3">
-  <p style="font-size: 20px;">Our Mission & Vission</p>
-  <p>At mkonnect we link the employer and the job seeker.
-  Profile matching employer and job seekers according to
-  employers requirements and the job seekers qualification.</p>
-</div><!--end of col md4-->
-<div class="col m3">
-  <p style="font-size: 20px;">Connect With Us on:</p>
-  <p><img src="img/icons/soc_fb.png" style="width: 15px;height: 15px;">&nbsp &nbsp facebook</p>
-  <p><img src="img/icons/soc_gplus.png" style="width: 15px;height: 15px;">&nbsp &nbsp google +</p>
-  <p><img src="img/icons/soc_tw.png" style="width: 15px;height: 15px;">&nbsp &nbsp twitter</p>
-  <p><img src="img/icons/soc_in.jpg" style="width: 15px;height: 15px;">&nbsp &nbsp linkedIn</p>
+</section>
+ <div id="footer" style="margin-top:0">
+  <div class="container">
+    <h4 style="color:#fff;"><center>Copyright ©2016 Mkonnect.</center></h4
+  </div>
 </div>
-<div class="col m3">
-  <p style="font-size: 25px;">Important links</p>
-  <p><a href="#2">Terms and Conditions</a></p>
-  <p><a href="#2">Privacy Policy</a></p>
-  <p><a href="#2">FAQs.</a></p>
-</div>
-<div class="col m3">
-  <p style="font-size: 25px;">Contact Info:</p>
-  <p><img src="img/icons/address.jpg" style="width: 20px;height: 20px;"> &nbsp &nbsp Bemuda plaza,Ngong Rd,Block A | 4th Floor,Left Wing | P.O.Box uxt-00100,Nairobi.</p>
-  <p><img src="img/icons/cont.jpg" style="width: 20px;height: 20px;"> &nbsp &nbsp Phone:0000100024550</p>
-  <p><img src="img/icons/email.jpg" style="width: 20px;height: 20px;"> &nbsp &nbsp info@mkonnect.co.ke</p>
-</div>
-</div><!--end of class row-->          
-<div class="row">
-<div class="col m12">
-<p class="white-text">Copyright  &copy<?php
-    require_once 'footertitle.php'
-    ?>Mkonnect&reg.<br>All Rights Reserved</p>
-</div>
-</div>
-</footer><!--end of footer here-->
 
 <!--ul class="nav pull-right scroll-top pull-right">
   <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>

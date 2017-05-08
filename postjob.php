@@ -1,7 +1,6 @@
-<?php 
- require ("db.php");
-  if ($_SESSION['auth_emp'] != true) {
-        header("Location: mkonnectn1.php#postjob");
+<?php  require ("db.php");
+      if ($_SESSION['auth_emp'] != true) {
+        header("Location: mkonnect.php#postjob");
       }
  ?>
 <!DOCTYPE html>
@@ -17,15 +16,21 @@
 <link href="css/animate.css" rel="stylesheet">
 <link href="css/site.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-wysihtml5.css">
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
-<link rel="stylesheet" href="css/updateprofile.css">
-<!--link href="css/editors.css" rel="stylesheet"-->
-<style type="text/css">
 
-  .post_jobs{
+
+
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
+     <link rel="stylesheet" href="css/updateprofile.css">
+     <!--link href="css/editors.css" rel="stylesheet"-->
+          <style type="text/css">
+
+          .post_jobs{
    height: auto;
   width: 100%;
   padding: 40px 0;
@@ -38,7 +43,7 @@
      </style>
 </head>
   <body data-spy="scroll" data-target="#uxt" data-offset="70" class="jumbotron">
-  <!--?php include_once("analyticstracking.php") ?--> 
+  <?php include_once("analyticstracking.php") ?>
 <!-- Fixed navbar -->
 <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
     <div class="container">
@@ -54,7 +59,7 @@
           <li class="active"><a href="mkonnect.php">Home</a></li>
           <li class="active"><a href="#posts">List Of Jobs Posted</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
-          <li class="active"><a href="logout.php">LogOut</a></li>
+          <li class="active"><a href="#contacts">LogOut</a></li>
 
       </div><!--/.nav-collapse -->
     </div><!--/.container -->
@@ -166,7 +171,7 @@
 
                         <select class="form-control" name="txt_nationality"   required="">
 
-              <option>IT</option>
+                              <option>IT</option>
               <option>Accounting</option>
               <option>Top Management</option>
               <option>Creatives</option>
@@ -219,7 +224,6 @@
                               <option>3</option>
                               <option>2</option>
                               <option>1</option>
-                              <option>Other.</option>
 
                               </select>
 
@@ -307,7 +311,7 @@
       $employer_id=$_SESSION['id'];
 
       //select query to view users
-      $view_admin_query = "select * from employer_jobs WHERE employer_id='$employer_id'";
+      $view_admin_query = "select * from employer_jobs WHERE employer_id=$employer_id";
       //run the sql query
 
       $run = mysqli_query($con, $view_admin_query);
@@ -369,7 +373,7 @@
 
   <div id="footer">
   <div class="container">
-    <h4 style="color:#fff;"><center>Copyright ©2017 Mkonnect.</center></h4>
+    <h4 style="color:#fff;"><center>Copyright ©2016 Mkonnect.</center></h4>
   </div>
 </div>
 

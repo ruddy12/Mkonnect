@@ -6,7 +6,7 @@
 	//error_reporting(E_ALL);
 	//ini_set('display_errors','On');
 
-  $con = mysqli_connect("localhost", "root","","mkonnect_m_mkonnect");
+  $con = mysqli_connect("localhost", "mkonnect_konnect", "mkonnect!@#", "mkonnect_m_konnect");
 
 	$inactive = 1200;
 

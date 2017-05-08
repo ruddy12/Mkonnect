@@ -1,45 +1,36 @@
-<?php   
-require ("db.php");
+<?php   require ("db.php");
 session_destroy();
  ?>
- 
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="QapaVeCTXy4MLxEILztDixJjvPsF7NpjUdP1do_qhYg" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>
-    <?php
-    require_once 'title.php';
-    ?>  
-     </title>
+    <title>Mkonnect</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/stylemkonect.css">
-    <link rel="stylesheet" type="text/css" href="css/materialize.css">
-    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/site.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
 
-  
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="css/mkonnect.css">
 <script src="js/bootstrap-popover-x.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
 <style type="text/css">
 .jumbotron{
    height: auto;
@@ -57,11 +48,8 @@ session_destroy();
   overflow: hidden;
 }
 #job_types{
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyA7xwFNVFltXxYYlyuiFzYtbshZcECIZThteLMuNgQvgEVAt"); 
-  height: auto;
-  width: 100%; 
-  padding: 40px 0; 
-  overflow: hidden;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyA7xwFNVFltXxYYlyuiFzYtbshZcECIZThteLMuNgQvgEVAt"); height: auto;
+  width: 100%; padding: 40px 0; overflow: hidden;
 }
 
 .jobbs {
@@ -82,25 +70,21 @@ session_destroy();
 
 
   </head>
-  <body data-spy="scroll" data-target="#uxt" data-offset="70">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
-  
-  <a class="" rel="home" href="#" title="logo">
+  <body data-spy="scroll" data-target="#uxt" data-offset="70" class="">
+  <?php include_once("analyticstracking.php") ?>
+  <a class="navbar-brand" rel="home" href="#" title="logo">
   <img src="img/logo.jpg"></a>
   <div class="top" style="margin-top:2%; margin-left: 75%;">
-  <!-- EDITED BY DAVID on 06/04/2017 -->
- 
-  
+  <!--a href="#sales" data-toggle="modal" data-target="#sales">
+  <button class="btn btn-primary btn-lg">Submit C.V.</button></a-->
   <a href="#sales" data-toggle="modal" data-target="#sales">
-  <button class="bt" style="margin-top:-400%;font-size:15px;color:black;width:80px;"><strong>Register
-  </strong></button></a>
-  <a href="#sales" data-toggle="modal" data-target="#sales"><button class="btn-floating btn-large pulse" style="font-size: 15px;color:black;width:80;"><strong>Login</strong></button></a>
+  <button class="btn btn-success btn-lg">Register</button></a>
+  <a href="#sales" data-toggle="modal" data-target="#sales"><button class="btn btn-danger btn-lg">Login</button></a>
   
-  <a href="#postjob"><button class="btn-floating btn-large pulse" style="font-size: 15px;color:black;width:80px;" ><strong>POSTJOB</strong></button></a><br>
+  <a href="#postjob"><button class="btn  btn-lg" style="background-color:#FF9000; color:#fff; margin-top:0%; margin-left: ; height:auto" >POSTJOB</button></a><br>
   </div><!--top-->
 <!-- Fixed navbar -->
 <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav" style="margin-top: 1%;">
-<!--<div class="nav-wrapper" id="nav" style="margin-top: 1%;"> -->
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -142,7 +126,7 @@ session_destroy();
               <a href="#jobs" style="color:#fff;"><h3>Creatives</h3></a>
               <a href="#3" style="color:#fff;"><h3>Customer Service</h3></a>
              <a href="#3" style="color:#fff;"> <h3>Education</h3></a>
-             <a href="#6" style="color:#fff;"> <h3>Farming&Agriculture</h3></a>
+             <a href="#6" style="color:#fff;"> <h3>Farming & Agriculture</h3></a>
               <a href="#6" style="color:#fff;"><h3>Government</h3></a>
              <a href="#6" style="color:#fff;"> <h3>Healthcare & Pharmaceuticals</h3></a>
              <a href="#9" style="color:#fff;"> <h3>Human Resources & Recruitment</h3></a>
@@ -398,7 +382,7 @@ session_destroy();
 <section class="wow fadeInDown" data-wow-duration="1s" >
   <div class="row">
   <div class="container">
-  <div class="jumbotron" style="margin-top: 1%;padding-top: 10px;">
+  <div class="jumbotron" style="margin-top: 5%;">
   <div class="thumnail">
     <div class="caption">
     <h3 class="text-danger"><center>Apply Below Job as Per Category</center></h3>
@@ -636,7 +620,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
               </div><!--forgotten_jobs-->
 
-          <p class="text-warning" style="text-align: center;"> If you don't have an account click Below to register <i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
+          <p class="text-warning" style="text-align: center;"> If you don't have an account clcik Below to register <i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
               <center><button class="btn btn-primary btn-lg" a data-toggle="collapse" href="#post_jobs_reg" aria-expanded="false" aria-controls="collapseExample"> Click to Register </button></center>
 
                 </div><!--from-group-->
@@ -713,7 +697,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 </div><!--post-Jobs-->
 
 
-<div id="contacts" class="wow bounceInLeft" data-wow-offset="200" style="">
+<div id="contacts" class="wow bounceInLeft" data-wow-offset="200">
 <div class="container">
     <div class="col-sm-8 col-sm-offset-2 text-center">
     <h2 class="text-warning"><em>CONTACT US</em></h2>
@@ -730,27 +714,13 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 </div><!--contacts-->
 
 
- <footer class="page-footer">
-          <div class="container">
-            <div class="row" >
-              <div class="col l6 s12">
 
-                <h5 class="white-text">Mkonnect Post Jobs and Also Get Jobs</h5>
-  
-    <h4 class="white-text"><center>Copyright  &copy<?php
-    require_once 'footertitle.php'
-    ?>
-     Mkonnect&reg.<br>All Rights Reserved</center></h4>
+  <div id="footer">
+  <div class="container">
+    <h4 style="color:#fff;"><center>Copyright ©2016 Mkonnect.</center></h4>
+  </div>
 </div>
-</div>
-  <div class="card blue-grey darken-1" style="float:right; margin-top: -10%;">
-            <div class="card-content white-text">
-              <span class="card-title">About Mkonnect</span>
-              <p>At mkonnect we help Employers<br>To find The Right Candidates,<br>For theier Posted jobs,also<br> the job seekers to find the jobs they are talented with.</p>
-              </div>
-              </div>
-</div>
-</footer>
+
 <ul class="nav pull-right scroll-top pull-right">
   <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
 </ul>

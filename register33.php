@@ -1,8 +1,3 @@
-<?php
-include 'db.php';
-include 'header.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,9 +43,9 @@ include 'header.php';
     	<div class="thumbnail">
     	<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR86aukb6WHzQ-QmUshY1kPcvnv9GuIkuvFUiaMgt7IJkxHxurRVQ">
     	<div class="caption">
-    	<center><p class="text-danger" style="font-size:2em;"> The Email Provided Already Exists In the system, Please try another one!'</p></center>
+    	<center><p class="text-danger" style="font-size:2em;"> Email is already exist in, Please try another one!'</p></center>
     
-     <center><a href="mkonnectn1.php"><button class="btn btn-primary btn-lg">Please Try Again</button></a></center>
+     <center><a href="mkonnect.php"><button class="btn btn-primary btn-lg">Try Again</button></a></center>
      </div>
      </div>
      </div>
@@ -65,11 +60,12 @@ include 'header.php';
 
 <?php
 
+require ("db.php");
+include('header.php');
 
 
 
-
-// if(isset($_POST['accounts'])){
+if(isset($_POST['accounts'])){
 
 //declare variable
  //$user_name = $_POST['txt_name'];
@@ -80,14 +76,14 @@ include 'header.php';
 
 //here query check weather if user already registered so can't register again.
 
-$select_acc="SELECT * FROM users WHERE email = '$user_email' ";
+$select_acc="select * from users WHERE email='".$user_email."'";
 
 $run_acc=mysqli_query($con,$select_acc);
 
 
 $rows = mysqli_num_rows($run_acc);
 
-if($run_acc)
+if($rows>0)
 {
 //$eng_acc= "<script>alert(' ".$user_email." Email is already exist in our database, Please try another one!')</script>";
 
@@ -102,11 +98,11 @@ else{
 
 //insert the user into the database.
 
-$insert_acc="INSERT INTO users (email,password) VALUES ('$user_email',md5('$user_pass'))";
+$insert_acc="insert into users (email,password) VALUES ('$user_email',md5('$user_pass'))";
 
 if(mysqli_query($con,$insert_acc))
 {
-$select_log = "SELECT * FROM users WHERE email='$user_email'";
+$select_log = "select * from users WHERE email='$user_email'";
 $query = mysqli_query($con, $select_log);
   $row = mysqli_fetch_array($query);
     $user_id = $row['user_id'];
@@ -115,7 +111,7 @@ $query = mysqli_query($con, $select_log);
     if (isset($_SESSION['category'])) {
       $category_id=$_SESSION['category'];
 
-        $insert_app="INSERT INTO job_applications (user_id,category_id) VALUES ('$user_id','$category_id')";
+        $insert_app="insert into job_applications (user_id,category_id) VALUES ('$user_id','$category_id')";
         mysqli_query($con,$insert_app);    }
   $_SESSION['auth'] = true;
   
@@ -129,7 +125,7 @@ echo"<script> $('#success').modal('show');</script>";
 }
 else{
 echo "<script>alert('Check your details and try again')</script>";
-$refresh = "<script>window.open('mkonnectn1.php','_self')</script>";
+$refresh = "<script>window.open('mkonnect.php','_self')</script>";
  echo $refresh;
  exit();
 }
@@ -137,7 +133,7 @@ $refresh = "<script>window.open('mkonnectn1.php','_self')</script>";
 }
 
 
-
+}
 
 
 

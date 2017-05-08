@@ -29,6 +29,10 @@
     </div>
   </div>
 </div>
+
+</div>
+
+
 </body>
 </html>
 
@@ -47,9 +51,8 @@ require ("db.php");
          //insert the user into the database.
 
          $insert_acc="insert into courses (course_name,user_id) VALUES ('$course',$user_id)";
-         $qry_insert=mysqli_query($insert_acc);
 
-         if($qry_insert)
+         if(mysqli_query($con,$insert_acc))
          {
 
         // echo "<script>alert('Saved  successfully')</script>";
